@@ -1393,7 +1393,7 @@ footer hr {
     }
     
     #portfolio-ul img {
-        width: 400px;
+        width: 100%;
     }
 
     .portfolio-img {
@@ -1574,7 +1574,18 @@ footer hr {
         max-width: 30ch;
     }
 
+    footer * {
+        text-align: left;
+    }
+
+    #footer-div-top div:first-child {
+        margin: 0;
+    }
+}
+
+@media (min-width: 1280px) {
     footer {
+        text-align: left;
         padding-top: 4rem;
         padding-bottom: 1rem;
     }
