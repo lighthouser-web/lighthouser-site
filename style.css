@@ -1119,6 +1119,8 @@ footer a:hover {
     line-height: 2rem;
     font-weight: bold;
     text-align: left;
+    display: block;
+    padding-bottom: 0.25rem;
 }
 
 footer ul li {
@@ -1137,6 +1139,22 @@ footer svg path {
 footer .medio-de-contacto p {
     margin: 0;
     color: white;
+}
+
+#footer-div-top-redes ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+#footer-div-top ul svg {
+    width: 24px;
+    height: auto;
+}
+
+#footer-div-top-redes ul svg:hover path {
+    fill: var(--secondaryColor);
+    transition: all 0.3s ease;
 }
 
 footer hr {
@@ -1179,6 +1197,12 @@ footer hr {
 
 .wsp-flotante svg path {
     fill: var(--whiteColor);
+}
+
+@media (min-width: 768px) {
+    .paquete-last-item .call-to-action {
+        padding: 1rem 1.75rem;;
+    }
 }
 
 @media (min-width: 992px) {
@@ -1243,8 +1267,6 @@ footer hr {
     h3 {
         font-size: 1.5rem;
     }
-
-
 
     section {
         padding: 3.5rem 0;
@@ -1601,9 +1623,12 @@ footer hr {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        gap: 250px;
         height: 100%;
-        padding: 1rem 0 3rem;
+        padding: 1rem 10rem 3rem 0;
+    }
+
+    #footer-div-top div:first-child {
+        width: 25%;
     }
 
     #footer-div-top-logo {
